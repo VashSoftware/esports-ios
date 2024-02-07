@@ -6,3 +6,17 @@
 //
 
 import Foundation
+import SwiftUI
+
+struct MatchView: View {
+    var body: some View {
+        VStack {           
+            Text("a")
+        }
+        .padding()
+    }
+}
+
+#Preview {
+    MatchView()
+}

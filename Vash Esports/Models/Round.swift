@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+class Round {
+    var event: Event
+    var name: String
+    var matches: [Match]
+    
+    init(event: Event, name: String, matches: [Match]) {
+        self.event = event
+        self.name = name
+        self.matches = matches
+    }
+}

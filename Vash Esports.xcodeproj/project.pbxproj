@@ -8,12 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		B81863B72B733AAC00B60352 /* Vash_EsportsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81863B62B733AAC00B60352 /* Vash_EsportsApp.swift */; };
-		B81863B92B733AAC00B60352 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81863B82B733AAC00B60352 /* ContentView.swift */; };
 		B81863BB2B733AAE00B60352 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B81863BA2B733AAE00B60352 /* Assets.xcassets */; };
 		B81863BE2B733AAE00B60352 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B81863BD2B733AAE00B60352 /* Preview Assets.xcassets */; };
 		B81863C82B733AAE00B60352 /* Vash_EsportsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81863C72B733AAE00B60352 /* Vash_EsportsTests.swift */; };
 		B81863D22B733AAE00B60352 /* Vash_EsportsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81863D12B733AAE00B60352 /* Vash_EsportsUITests.swift */; };
 		B81863D42B733AAE00B60352 /* Vash_EsportsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81863D32B733AAE00B60352 /* Vash_EsportsUITestsLaunchTests.swift */; };
+		B81863E32B733C8800B60352 /* MatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81863E22B733C8800B60352 /* MatchView.swift */; };
+		B81863E62B733ECB00B60352 /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = B81863E52B733ECB00B60352 /* Auth */; };
+		B81863E82B733ECB00B60352 /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = B81863E72B733ECB00B60352 /* Functions */; };
+		B81863EA2B733ECB00B60352 /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = B81863E92B733ECB00B60352 /* PostgREST */; };
+		B81863EC2B733ECB00B60352 /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = B81863EB2B733ECB00B60352 /* Realtime */; };
+		B81863EE2B733ECB00B60352 /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = B81863ED2B733ECB00B60352 /* Storage */; };
+		B81863F02B733ECB00B60352 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = B81863EF2B733ECB00B60352 /* Supabase */; };
+		B81863F22B73406600B60352 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81863F12B73406600B60352 /* LoginView.swift */; };
+		B81863F42B73409A00B60352 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81863F32B73409A00B60352 /* HomeView.swift */; };
+		B81863FB2B7343ED00B60352 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81863FA2B7343ED00B60352 /* User.swift */; };
+		B81863FD2B7343F500B60352 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81863FC2B7343F500B60352 /* Event.swift */; };
+		B81863FF2B73440300B60352 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81863FE2B73440300B60352 /* Match.swift */; };
+		B849A4852B734C6C009993D5 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B849A4842B734C6C009993D5 /* EventView.swift */; };
+		B849A4872B734C7D009993D5 /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B849A4862B734C7D009993D5 /* TeamView.swift */; };
+		B849A4892B734C88009993D5 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B849A4882B734C88009993D5 /* UserView.swift */; };
+		B849A48B2B734C95009993D5 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B849A48A2B734C95009993D5 /* SettingsView.swift */; };
+		B849A48D2B734E33009993D5 /* Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = B849A48C2B734E33009993D5 /* Round.swift */; };
+		B849A48F2B7350D5009993D5 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = B849A48E2B7350D5009993D5 /* Team.swift */; };
+		B849A4912B735109009993D5 /* Participation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B849A4902B735109009993D5 /* Participation.swift */; };
+		B849A4932B735168009993D5 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = B849A4922B735168009993D5 /* Map.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +55,6 @@
 /* Begin PBXFileReference section */
 		B81863B32B733AAC00B60352 /* Vash Esports.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vash Esports.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B81863B62B733AAC00B60352 /* Vash_EsportsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vash_EsportsApp.swift; sourceTree = "<group>"; };
-		B81863B82B733AAC00B60352 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B81863BA2B733AAE00B60352 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B81863BD2B733AAE00B60352 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B81863C32B733AAE00B60352 /* Vash EsportsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vash EsportsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +62,20 @@
 		B81863CD2B733AAE00B60352 /* Vash EsportsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vash EsportsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B81863D12B733AAE00B60352 /* Vash_EsportsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vash_EsportsUITests.swift; sourceTree = "<group>"; };
 		B81863D32B733AAE00B60352 /* Vash_EsportsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vash_EsportsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B81863E22B733C8800B60352 /* MatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchView.swift; sourceTree = "<group>"; };
+		B81863F12B73406600B60352 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		B81863F32B73409A00B60352 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B81863FA2B7343ED00B60352 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B81863FC2B7343F500B60352 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		B81863FE2B73440300B60352 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		B849A4842B734C6C009993D5 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
+		B849A4862B734C7D009993D5 /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
+		B849A4882B734C88009993D5 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		B849A48A2B734C95009993D5 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B849A48C2B734E33009993D5 /* Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Round.swift; sourceTree = "<group>"; };
+		B849A48E2B7350D5009993D5 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		B849A4902B735109009993D5 /* Participation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Participation.swift; sourceTree = "<group>"; };
+		B849A4922B735168009993D5 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +83,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B81863EA2B733ECB00B60352 /* PostgREST in Frameworks */,
+				B81863E82B733ECB00B60352 /* Functions in Frameworks */,
+				B81863F02B733ECB00B60352 /* Supabase in Frameworks */,
+				B81863E62B733ECB00B60352 /* Auth in Frameworks */,
+				B81863EE2B733ECB00B60352 /* Storage in Frameworks */,
+				B81863EC2B733ECB00B60352 /* Realtime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,8 +132,13 @@
 		B81863B52B733AAC00B60352 /* Vash Esports */ = {
 			isa = PBXGroup;
 			children = (
+				B81863F92B7343CD00B60352 /* Utilities */,
+				B81863F82B7343C600B60352 /* Services */,
+				B81863F72B7343C000B60352 /* Controllers */,
+				B81863F62B7343B800B60352 /* ViewModels */,
+				B81863F52B7343A800B60352 /* Models */,
+				B81863E02B733C5A00B60352 /* Views */,
 				B81863B62B733AAC00B60352 /* Vash_EsportsApp.swift */,
-				B81863B82B733AAC00B60352 /* ContentView.swift */,
 				B81863BA2B733AAE00B60352 /* Assets.xcassets */,
 				B81863BC2B733AAE00B60352 /* Preview Content */,
 			);
@@ -127,6 +170,70 @@
 			path = "Vash EsportsUITests";
 			sourceTree = "<group>";
 		};
+		B81863E02B733C5A00B60352 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B81863E12B733C6200B60352 /* Screens */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B81863E12B733C6200B60352 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				B81863E22B733C8800B60352 /* MatchView.swift */,
+				B81863F12B73406600B60352 /* LoginView.swift */,
+				B81863F32B73409A00B60352 /* HomeView.swift */,
+				B849A4842B734C6C009993D5 /* EventView.swift */,
+				B849A4862B734C7D009993D5 /* TeamView.swift */,
+				B849A4882B734C88009993D5 /* UserView.swift */,
+				B849A48A2B734C95009993D5 /* SettingsView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		B81863F52B7343A800B60352 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B81863FA2B7343ED00B60352 /* User.swift */,
+				B81863FC2B7343F500B60352 /* Event.swift */,
+				B81863FE2B73440300B60352 /* Match.swift */,
+				B849A48C2B734E33009993D5 /* Round.swift */,
+				B849A48E2B7350D5009993D5 /* Team.swift */,
+				B849A4902B735109009993D5 /* Participation.swift */,
+				B849A4922B735168009993D5 /* Map.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B81863F62B7343B800B60352 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B81863F72B7343C000B60352 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B81863F82B7343C600B60352 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B81863F92B7343CD00B60352 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +250,14 @@
 			dependencies = (
 			);
 			name = "Vash Esports";
+			packageProductDependencies = (
+				B81863E52B733ECB00B60352 /* Auth */,
+				B81863E72B733ECB00B60352 /* Functions */,
+				B81863E92B733ECB00B60352 /* PostgREST */,
+				B81863EB2B733ECB00B60352 /* Realtime */,
+				B81863ED2B733ECB00B60352 /* Storage */,
+				B81863EF2B733ECB00B60352 /* Supabase */,
+			);
 			productName = "Vash Esports";
 			productReference = B81863B32B733AAC00B60352 /* Vash Esports.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +330,9 @@
 				Base,
 			);
 			mainGroup = B81863AA2B733AAC00B60352;
+			packageReferences = (
+				B81863E42B733ECA00B60352 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			productRefGroup = B81863B42B733AAC00B60352 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +375,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B81863B92B733AAC00B60352 /* ContentView.swift in Sources */,
+				B81863E32B733C8800B60352 /* MatchView.swift in Sources */,
+				B81863FF2B73440300B60352 /* Match.swift in Sources */,
+				B849A48F2B7350D5009993D5 /* Team.swift in Sources */,
+				B81863F42B73409A00B60352 /* HomeView.swift in Sources */,
+				B81863F22B73406600B60352 /* LoginView.swift in Sources */,
+				B81863FB2B7343ED00B60352 /* User.swift in Sources */,
+				B81863FD2B7343F500B60352 /* Event.swift in Sources */,
 				B81863B72B733AAC00B60352 /* Vash_EsportsApp.swift in Sources */,
+				B849A4892B734C88009993D5 /* UserView.swift in Sources */,
+				B849A4852B734C6C009993D5 /* EventView.swift in Sources */,
+				B849A4932B735168009993D5 /* Map.swift in Sources */,
+				B849A4872B734C7D009993D5 /* TeamView.swift in Sources */,
+				B849A4912B735109009993D5 /* Participation.swift in Sources */,
+				B849A48D2B734E33009993D5 /* Round.swift in Sources */,
+				B849A48B2B734C95009993D5 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +719,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B81863E42B733ECA00B60352 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase-community/supabase-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B81863E52B733ECB00B60352 /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B81863E42B733ECA00B60352 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		B81863E72B733ECB00B60352 /* Functions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B81863E42B733ECA00B60352 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Functions;
+		};
+		B81863E92B733ECB00B60352 /* PostgREST */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B81863E42B733ECA00B60352 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = PostgREST;
+		};
+		B81863EB2B733ECB00B60352 /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B81863E42B733ECA00B60352 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Realtime;
+		};
+		B81863ED2B733ECB00B60352 /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B81863E42B733ECA00B60352 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
+		};
+		B81863EF2B733ECB00B60352 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B81863E42B733ECA00B60352 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B81863AB2B733AAC00B60352 /* Project object */;
 }
