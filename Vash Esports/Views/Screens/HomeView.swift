@@ -11,10 +11,13 @@ import SwiftUI
 struct HomeView: View {
     
     var body: some View {
-        NavigationSplitView {
+        NavigationSplitView {            
             Text("Vash Esports")
-                .font(.title)
+                .font(.largeTitle)
                 .fontWeight(.bold)
+            
+            Text("Ongoing Matches")
+                .font(.title)
             
             NavigationLink("macdobald borgar vs evil macdobald borgar") {
                 MatchView()
