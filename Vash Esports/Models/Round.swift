@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Round {
+struct Round: Decodable {
     var event: Event
     var name: String
     var matches: [Match]

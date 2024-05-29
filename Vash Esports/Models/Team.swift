@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Team {
+struct Team: Decodable {
     var name: String
     
     var participations: [Participation]

@@ -6,6 +6,6 @@
 //
 
 import Foundation
-class User {
+struct User: Decodable {
     
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Match {
-    var teamPlayers: [Participation]
-    var round: Round
+struct Match: Identifiable, Codable {
+    let id: Int
 }
+

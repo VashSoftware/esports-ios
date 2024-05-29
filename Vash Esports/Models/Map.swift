@@ -7,6 +7,10 @@
 
 import Foundation
 
-class Map {
+struct Map: Decodable {
+    var osuId: String
     
+    init(osuId: String) {
+        self.osuId = osuId
+    }
 }

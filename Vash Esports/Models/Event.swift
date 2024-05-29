@@ -7,14 +7,6 @@
 
 import Foundation
 
-class Event {
+struct Event: Decodable {
     var name: String
-    var date: Date
-    var rounds: [Round]
-    
-    init(name: String, date: Date, rounds: [Round]) {
-        self.name = name
-        self.date = date
-        self.rounds = rounds
-    }
 }

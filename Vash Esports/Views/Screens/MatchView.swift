@@ -1,22 +1,64 @@
-//
-//  MatchView.swift
-//  Vash Esports
-//
-//  Created by Stan Runge on 07/02/2024.
-//
-
-import Foundation
 import SwiftUI
 
 struct MatchView: View {
+    @State private var match: Match?
+    @State private var error: Error?
+    
     var body: some View {
-        VStack {           
-            Text("a")
+        ZStack {
+            Color.black.edgesIgnoringSafeArea(.all)
+            
+            if let error = error {
+                Text("Error: \(error.localizedDescription)")
+                    .foregroundColor(.red)
+            } else if let match = match {
+                VStack {
+                    HStack {
+                        VStack {
+                            Text("Team 1: \(match.id)")
+                            Text("0")
+                        }
+                        
+                        Spacer()
+                            .padding()
+                        
+                        VStack {
+                            Text("Team 2: \(match.id)")
+                            Text("0")
+                        }
+                    }
+                }
+                .foregroundColor(.white)
+            } else {
+                ProgressView("Loading match data...")
+                    .foregroundColor(.white)
+            }
         }
-        .padding()
+        .preferredColorScheme(.dark)
+        .task {
+            await fetchMatch()
+        }
+    }
+    
+    func fetchMatch() async {
+        do {
+            error = nil
+            self.match = try await SupabaseManager.shared.supabaseClient
+                .database
+                .from("matches")
+                .select()
+                .eq("id", value: "3")
+                .single()
+                .execute()
+                .value
+        } catch {
+            self.error = error
+        }
     }
 }
 
-#Preview {
-    MatchView()
+struct MatchView_Previews: PreviewProvider {
+    static var previews: some View {
+        MatchView()
+    }
 }

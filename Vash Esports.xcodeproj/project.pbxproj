@@ -25,6 +25,8 @@
 		B81863FB2B7343ED00B60352 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81863FA2B7343ED00B60352 /* User.swift */; };
 		B81863FD2B7343F500B60352 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81863FC2B7343F500B60352 /* Event.swift */; };
 		B81863FF2B73440300B60352 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81863FE2B73440300B60352 /* Match.swift */; };
+		B84620D32B7B196F00639A65 /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84620D22B7B196F00639A65 /* EventViewModel.swift */; };
+		B84620D52B7B19CE00639A65 /* SupabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84620D42B7B19CE00639A65 /* SupabaseManager.swift */; };
 		B849A4852B734C6C009993D5 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B849A4842B734C6C009993D5 /* EventView.swift */; };
 		B849A4872B734C7D009993D5 /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B849A4862B734C7D009993D5 /* TeamView.swift */; };
 		B849A4892B734C88009993D5 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B849A4882B734C88009993D5 /* UserView.swift */; };
@@ -33,6 +35,14 @@
 		B849A48F2B7350D5009993D5 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = B849A48E2B7350D5009993D5 /* Team.swift */; };
 		B849A4912B735109009993D5 /* Participation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B849A4902B735109009993D5 /* Participation.swift */; };
 		B849A4932B735168009993D5 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = B849A4922B735168009993D5 /* Map.swift */; };
+		B860026B2C07EADF00543286 /* MatchParticipant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B860026A2C07EADF00543286 /* MatchParticipant.swift */; };
+		B860026D2C07EC0C00543286 /* MatchParticipantPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B860026C2C07EC0C00543286 /* MatchParticipantPlayer.swift */; };
+		B860026F2C07EC1A00543286 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = B860026E2C07EC1A00543286 /* Score.swift */; };
+		B86002712C07EC2D00543286 /* MapPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86002702C07EC2D00543286 /* MapPool.swift */; };
+		B86002732C07EC3800543286 /* MapPoolMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86002722C07EC3800543286 /* MapPoolMap.swift */; };
+		B86002752C07EC4900543286 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86002742C07EC4900543286 /* Game.swift */; };
+		B882619F2B7B15C9009CE525 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B882619E2B7B15C9009CE525 /* ContentView.swift */; };
+		B88261A12B7B16AE009CE525 /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88261A02B7B16AE009CE525 /* EventsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +78,8 @@
 		B81863FA2B7343ED00B60352 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B81863FC2B7343F500B60352 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		B81863FE2B73440300B60352 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		B84620D22B7B196F00639A65 /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
+		B84620D42B7B19CE00639A65 /* SupabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseManager.swift; sourceTree = "<group>"; };
 		B849A4842B734C6C009993D5 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
 		B849A4862B734C7D009993D5 /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
 		B849A4882B734C88009993D5 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
@@ -76,6 +88,14 @@
 		B849A48E2B7350D5009993D5 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		B849A4902B735109009993D5 /* Participation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Participation.swift; sourceTree = "<group>"; };
 		B849A4922B735168009993D5 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		B860026A2C07EADF00543286 /* MatchParticipant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchParticipant.swift; sourceTree = "<group>"; };
+		B860026C2C07EC0C00543286 /* MatchParticipantPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchParticipantPlayer.swift; sourceTree = "<group>"; };
+		B860026E2C07EC1A00543286 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		B86002702C07EC2D00543286 /* MapPool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPool.swift; sourceTree = "<group>"; };
+		B86002722C07EC3800543286 /* MapPoolMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPoolMap.swift; sourceTree = "<group>"; };
+		B86002742C07EC4900543286 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		B882619E2B7B15C9009CE525 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B88261A02B7B16AE009CE525 /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +161,7 @@
 				B81863B62B733AAC00B60352 /* Vash_EsportsApp.swift */,
 				B81863BA2B733AAE00B60352 /* Assets.xcassets */,
 				B81863BC2B733AAE00B60352 /* Preview Content */,
+				B882619E2B7B15C9009CE525 /* ContentView.swift */,
 			);
 			path = "Vash Esports";
 			sourceTree = "<group>";
@@ -188,6 +209,7 @@
 				B849A4862B734C7D009993D5 /* TeamView.swift */,
 				B849A4882B734C88009993D5 /* UserView.swift */,
 				B849A48A2B734C95009993D5 /* SettingsView.swift */,
+				B88261A02B7B16AE009CE525 /* EventsView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -202,6 +224,12 @@
 				B849A48E2B7350D5009993D5 /* Team.swift */,
 				B849A4902B735109009993D5 /* Participation.swift */,
 				B849A4922B735168009993D5 /* Map.swift */,
+				B860026A2C07EADF00543286 /* MatchParticipant.swift */,
+				B860026C2C07EC0C00543286 /* MatchParticipantPlayer.swift */,
+				B860026E2C07EC1A00543286 /* Score.swift */,
+				B86002702C07EC2D00543286 /* MapPool.swift */,
+				B86002722C07EC3800543286 /* MapPoolMap.swift */,
+				B86002742C07EC4900543286 /* Game.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -209,6 +237,7 @@
 		B81863F62B7343B800B60352 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				B84620D22B7B196F00639A65 /* EventViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -223,6 +252,7 @@
 		B81863F82B7343C600B60352 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				B84620D42B7B19CE00639A65 /* SupabaseManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -376,20 +406,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				B81863E32B733C8800B60352 /* MatchView.swift in Sources */,
+				B84620D32B7B196F00639A65 /* EventViewModel.swift in Sources */,
 				B81863FF2B73440300B60352 /* Match.swift in Sources */,
+				B84620D52B7B19CE00639A65 /* SupabaseManager.swift in Sources */,
 				B849A48F2B7350D5009993D5 /* Team.swift in Sources */,
 				B81863F42B73409A00B60352 /* HomeView.swift in Sources */,
 				B81863F22B73406600B60352 /* LoginView.swift in Sources */,
 				B81863FB2B7343ED00B60352 /* User.swift in Sources */,
 				B81863FD2B7343F500B60352 /* Event.swift in Sources */,
+				B86002732C07EC3800543286 /* MapPoolMap.swift in Sources */,
+				B882619F2B7B15C9009CE525 /* ContentView.swift in Sources */,
 				B81863B72B733AAC00B60352 /* Vash_EsportsApp.swift in Sources */,
 				B849A4892B734C88009993D5 /* UserView.swift in Sources */,
+				B860026D2C07EC0C00543286 /* MatchParticipantPlayer.swift in Sources */,
 				B849A4852B734C6C009993D5 /* EventView.swift in Sources */,
+				B860026B2C07EADF00543286 /* MatchParticipant.swift in Sources */,
+				B86002752C07EC4900543286 /* Game.swift in Sources */,
 				B849A4932B735168009993D5 /* Map.swift in Sources */,
 				B849A4872B734C7D009993D5 /* TeamView.swift in Sources */,
 				B849A4912B735109009993D5 /* Participation.swift in Sources */,
 				B849A48D2B734E33009993D5 /* Round.swift in Sources */,
+				B86002712C07EC2D00543286 /* MapPool.swift in Sources */,
 				B849A48B2B734C95009993D5 /* SettingsView.swift in Sources */,
+				B860026F2C07EC1A00543286 /* Score.swift in Sources */,
+				B88261A12B7B16AE009CE525 /* EventsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

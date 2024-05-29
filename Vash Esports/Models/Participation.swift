@@ -6,7 +6,7 @@
 //
 
 import Foundation
-class Participation {
+struct Participation: Decodable {
     var event: Event
     var team: Team
     

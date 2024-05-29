@@ -17,9 +17,9 @@ struct ContentView: View {
                     Label("Home", systemImage: "house")
                 }
             
-            EventsView()
+            EventView()
                 .tabItem {
-                    Label("Events", systemImage: "calendar")
+                    Label("Event", systemImage: "calendar")
                 }
             
             UserView()

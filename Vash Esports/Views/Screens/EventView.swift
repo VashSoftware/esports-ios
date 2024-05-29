@@ -6,3 +6,18 @@
 //
 
 import Foundation
+import SwiftUI
+
+struct EventView: View {
+    @ObservedObject var viewModel = EventViewModel()
+    
+    var body: some View {
+        Text(viewModel.event?.name ?? "Event Name")
+        .onAppear {
+            Task {
+                await viewModel.getEvent()
+            }
+            
+            }
+        }
+    }
