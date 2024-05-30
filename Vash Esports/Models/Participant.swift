@@ -9,5 +9,7 @@ import Foundation
 
 struct Participant: Identifiable, Decodable {
     let id: Int
+    let teams: Team
+//    let event: Event
 //    let match_participants: [MatchParticipant]
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct MatchParticipantPlayer: Decodable {
+struct MatchParticipantPlayer: Identifiable, Decodable {
     let id: Int
-    let matchParticipant: MatchParticipant
+    let match_participants: MatchParticipant
 }

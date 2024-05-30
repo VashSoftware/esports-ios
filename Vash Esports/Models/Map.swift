@@ -7,10 +7,8 @@
 
 import Foundation
 
-struct Map: Decodable {
-    var osuId: String
-    
-    init(osuId: String) {
-        self.osuId = osuId
-    }
+struct Map: Identifiable, Decodable {
+    let id: Int
+    let osu_id: String
+    let match_maps: [MatchMap]
 }

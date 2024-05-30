@@ -15,7 +15,7 @@ struct MatchView: View {
                 VStack {
                     HStack {
                         VStack {
-                            AsyncImage(url: URL(string: "https://mdixwlzweijevgjmcsmt.supabase.co/storage/v1/object/public/team_icons/1")) { image in
+                            AsyncImage(url: URL(string: "https://mdixwlzweijevgjmcsmt.supabase.co/storage/v1/object/public/team_icons/\(match.match_participants[0].participants.id)")) { image in
                                                             image
                                                                 .resizable()
                                                                 .aspectRatio(contentMode: .fit)
@@ -24,19 +24,34 @@ struct MatchView: View {
                                                         } placeholder: {
                                                             ProgressView()
                                                         }
-                            Text("Team 1: \(match.match_participants[0].participants.id)")
+                            Text(String(match.match_participants[0].participants.id))
                                 .font(.custom("Times New Roman", size: 16))
                                 .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                            Text("0")
-                                .font(.custom("Times New Roman", size: 16))
-                                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+
                         }
                         
                         Spacer()
-                            .padding()
+                            .frame(width: 40)
+                        
+                        HStack {
+                            Text("5")
+                                .font(.custom("Times New Roman", size: 32))
+                                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                            
+                            Text("-")
+                                .font(.custom("Times New Roman", size: 32))
+                                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                            
+//                            Text(String(match.match_maps[1].id))
+//                                .font(.custom("Times New Roman", size: 32))
+//                                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                        }
+                        
+                        Spacer()
+                            .frame(width: 40)
                         
                         VStack {
-                            AsyncImage(url: URL(string: "https://mdixwlzweijevgjmcsmt.supabase.co/storage/v1/object/public/team_icons/2")) { image in
+                            AsyncImage(url: URL(string: "https://mdixwlzweijevgjmcsmt.supabase.co/storage/v1/object/public/team_icons/\(match.match_participants[1].participants.id)")) { image in
                                                             image
                                                                 .resizable()
                                                                 .aspectRatio(contentMode: .fit)
@@ -45,10 +60,7 @@ struct MatchView: View {
                                                         } placeholder: {
                                                             ProgressView()
                                                         }
-                            Text("Team 2: \(match.match_participants[1].participants.id)")
-                                .font(.custom("Times New Roman", size: 16))
-                                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                            Text("0")
+                            Text(String(match.match_participants[1].participants.id))
                                 .font(.custom("Times New Roman", size: 16))
                                 .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                         }
@@ -69,14 +81,18 @@ struct MatchView: View {
     func fetchMatch() async {
         do {
             error = nil
-            self.match = try await SupabaseManager.shared.supabaseClient
-                .database
-                .from("matches")
-                .select("*, match_participants(*, participants(*))")
-                .eq("id", value: "3")
-                .single()
-                .execute()
-                .value
+            
+            let response = try await SupabaseManager.shared.supabaseClient
+                        .database
+                        .from("matches")
+                        .select("*, match_participants(*, participants(*))")
+                        .eq("id", value: "3")
+                        .single()
+                        .execute()
+                    
+            print("Response: \(response.data)")
+            
+            self.match = response.value as Match
             
         } catch {
             self.error = error

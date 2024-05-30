@@ -9,8 +9,9 @@ import Foundation
 
 struct MatchParticipant: Identifiable, Decodable {
     let id: Int
-//    let match: Match
+    let matches: Match
     let participants: Participant
+//    let match_participant_players: [MatchParticipantPlayer]
 //    let roll: Int
 //    let surrenderedBans: Bool
 }

@@ -7,13 +7,9 @@
 
 import Foundation
 
-struct Team: Decodable {
-    var name: String
-    
-    var participations: [Participation]
-    
-    init(name: String, participations: [Participation]) {
-        self.name = name
-        self.participations = participations
-    }
+struct Team: Identifiable, Decodable {
+    let id: Int
+    let name: String
+    let bio: String
+    let country_code: String
 }

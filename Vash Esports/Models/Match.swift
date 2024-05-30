@@ -9,6 +9,7 @@ import Foundation
 
 struct Match: Identifiable, Decodable {
     let id: Int
-    let match_participants: [MatchParticipant]
+    let match_participants: [MatchParticipant]?
+//    let match_maps: [MatchMap]
 }
 
