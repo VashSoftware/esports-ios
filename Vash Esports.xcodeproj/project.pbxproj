@@ -25,6 +25,7 @@
 		B81863FB2B7343ED00B60352 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81863FA2B7343ED00B60352 /* User.swift */; };
 		B81863FD2B7343F500B60352 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81863FC2B7343F500B60352 /* Event.swift */; };
 		B81863FF2B73440300B60352 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81863FE2B73440300B60352 /* Match.swift */; };
+		B81D8EE72C07FE1C004AAC00 /* Participant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81D8EE62C07FE1C004AAC00 /* Participant.swift */; };
 		B84620D32B7B196F00639A65 /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84620D22B7B196F00639A65 /* EventViewModel.swift */; };
 		B84620D52B7B19CE00639A65 /* SupabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84620D42B7B19CE00639A65 /* SupabaseManager.swift */; };
 		B849A4852B734C6C009993D5 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B849A4842B734C6C009993D5 /* EventView.swift */; };
@@ -78,6 +79,7 @@
 		B81863FA2B7343ED00B60352 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B81863FC2B7343F500B60352 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		B81863FE2B73440300B60352 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		B81D8EE62C07FE1C004AAC00 /* Participant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Participant.swift; sourceTree = "<group>"; };
 		B84620D22B7B196F00639A65 /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
 		B84620D42B7B19CE00639A65 /* SupabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseManager.swift; sourceTree = "<group>"; };
 		B849A4842B734C6C009993D5 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 				B86002702C07EC2D00543286 /* MapPool.swift */,
 				B86002722C07EC3800543286 /* MapPoolMap.swift */,
 				B86002742C07EC4900543286 /* Game.swift */,
+				B81D8EE62C07FE1C004AAC00 /* Participant.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -422,6 +425,7 @@
 				B849A4852B734C6C009993D5 /* EventView.swift in Sources */,
 				B860026B2C07EADF00543286 /* MatchParticipant.swift in Sources */,
 				B86002752C07EC4900543286 /* Game.swift in Sources */,
+				B81D8EE72C07FE1C004AAC00 /* Participant.swift in Sources */,
 				B849A4932B735168009993D5 /* Map.swift in Sources */,
 				B849A4872B734C7D009993D5 /* TeamView.swift in Sources */,
 				B849A4912B735109009993D5 /* Participation.swift in Sources */,
@@ -518,7 +522,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -575,7 +579,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -596,11 +600,13 @@
 				DEVELOPMENT_TEAM = YDRS2YJ6Z7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -608,6 +614,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.stanrunge.Vash-Esports";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -625,11 +633,13 @@
 				DEVELOPMENT_TEAM = YDRS2YJ6Z7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -637,6 +647,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.stanrunge.Vash-Esports";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

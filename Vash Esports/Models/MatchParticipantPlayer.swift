@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct MatchParticipantPlayer: Decodable {
+    let id: Int
+    let matchParticipant: MatchParticipant
+}

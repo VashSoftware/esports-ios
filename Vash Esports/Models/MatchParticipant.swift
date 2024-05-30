@@ -7,12 +7,10 @@
 
 import Foundation
 
-struct MatchParticipant: Decodable {
-    var teamPlayers: [Participation]
-    var round: Round
-    
-    init(teamPlayers: [Participation], round: Round) {
-        self.teamPlayers = teamPlayers
-        self.round = round
-    }
+struct MatchParticipant: Identifiable, Decodable {
+    let id: Int
+//    let match: Match
+    let participants: Participant
+//    let roll: Int
+//    let surrenderedBans: Bool
 }

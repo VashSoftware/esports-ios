@@ -15,16 +15,42 @@ struct MatchView: View {
                 VStack {
                     HStack {
                         VStack {
-                            Text("Team 1: \(match.id)")
+                            AsyncImage(url: URL(string: "https://mdixwlzweijevgjmcsmt.supabase.co/storage/v1/object/public/team_icons/1")) { image in
+                                                            image
+                                                                .resizable()
+                                                                .aspectRatio(contentMode: .fit)
+                                                                .frame(width: 100, height: 100)
+                                                                .clipShape(RoundedRectangle(cornerRadius: 100 / 4))
+                                                        } placeholder: {
+                                                            ProgressView()
+                                                        }
+                            Text("Team 1: \(match.match_participants[0].participants.id)")
+                                .font(.custom("Times New Roman", size: 16))
+                                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                             Text("0")
+                                .font(.custom("Times New Roman", size: 16))
+                                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                         }
                         
                         Spacer()
                             .padding()
                         
                         VStack {
-                            Text("Team 2: \(match.id)")
+                            AsyncImage(url: URL(string: "https://mdixwlzweijevgjmcsmt.supabase.co/storage/v1/object/public/team_icons/2")) { image in
+                                                            image
+                                                                .resizable()
+                                                                .aspectRatio(contentMode: .fit)
+                                                                .frame(width: 100, height: 100)
+                                                                .clipShape(RoundedRectangle(cornerRadius: 100 / 4))
+                                                        } placeholder: {
+                                                            ProgressView()
+                                                        }
+                            Text("Team 2: \(match.match_participants[1].participants.id)")
+                                .font(.custom("Times New Roman", size: 16))
+                                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                             Text("0")
+                                .font(.custom("Times New Roman", size: 16))
+                                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                         }
                     }
                 }
@@ -46,11 +72,12 @@ struct MatchView: View {
             self.match = try await SupabaseManager.shared.supabaseClient
                 .database
                 .from("matches")
-                .select()
+                .select("*, match_participants(*, participants(*))")
                 .eq("id", value: "3")
                 .single()
                 .execute()
                 .value
+            
         } catch {
             self.error = error
         }

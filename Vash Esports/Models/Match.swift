@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct Match: Identifiable, Codable {
+struct Match: Identifiable, Decodable {
     let id: Int
+    let match_participants: [MatchParticipant]
 }
 
